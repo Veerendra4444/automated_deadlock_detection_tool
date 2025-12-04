@@ -1,0 +1,158 @@
+/* ============================
+   BASIC CLEAN ORANGE THEME
+   Simple • Soft Colors • No heavy effects
+   ============================ */
+
+/* ---------- Global ---------- */
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff7ef; 
+    color: #333;
+    margin: 0;
+    padding: 30px;
+}
+
+/* ---------- Header ---------- */
+header {
+    background: #ff8c42;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+nav a {
+    color: #ffe9d6;
+    margin: 0 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Main Container ---------- */
+main {
+    max-width: 85%;
+    margin: 25px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    border: 1px solid #ffd4b0;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+/* ---------- Form Layout ---------- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 2-column layout */
+.matrix,
+.resources {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 25px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.row label {
+    font-weight: 600;
+    color: #444;
+}
+
+/* ---------- Inputs ---------- */
+input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ffc89e;
+    background: #fffdf9;
+    font-size: 15px;
+    color: #333;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #ff8c42;
+    box-shadow: 0 0 6px rgba(255,140,66,0.4);
+}
+
+/* ---------- Button ---------- */
+button {
+    align-self: flex-end;
+    padding: 12px 22px;
+    background: #ff8c42;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+button:hover {
+    background: #ff7a21;
+}
+button:active {
+    background: #e76d1a;
+}
+
+/* ---------- Result Box ---------- */
+.result {
+    background: #fff5eb;
+    border-left: 4px solid #ff8c42;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* ---------- Table ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #ff8c42;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ffd4b0;
+}
+tbody tr:nth-child(even) {
+    background: #fff7ef;
+}
+tbody tr:hover {
+    background: #ffe7d5;
+}
+
+/* ---------- Special IDs ---------- */
+#suggeInHistory {
+    white-space: initial;
+    max-width: 450px;
+}
+
+.resources input {
+    max-width: 100%;
+}
+
+/* ---------- Responsive ---------- */
+@media(max-width: 800px){
+    .matrix, .resources {
+        grid-template-columns: 1fr;
+    }
+}
